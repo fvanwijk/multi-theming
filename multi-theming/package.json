@@ -4,9 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "npm run dev:red",
+    "dev:red": "vite --config=vite.red.config.js",
+    "dev:blue": "vite --config=vite.blue.config.js",
+    "dev:green": "vite --config=vite.green.config.js",
+    "build:red": "vite build --config=vite.red.config.js",
+    "build:blue": "vite build --config=vite.blue.config.js",
+    "build:green": "vite build --config=vite.green.config.js",
+    "preview:red": "vite preview --config=vite.red.config.js",
+    "preview:blue": "vite preview --config=vite.blue.config.js",
+    "preview:green": "vite preview --config=vite.green.config.js",
   },
   "devDependencies": {
     "autoprefixer": "10.4.8",

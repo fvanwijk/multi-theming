@@ -1,10 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  .content {
-    @apply inline-block p-4 border-black;
-    @apply bg-primary text-primary-dark; /* these classes are themed based on CSS vars */
-  }
-}
